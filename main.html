@@ -21,18 +21,38 @@
         </div>
         <div class="kalkulacka">
             <h2><b>Kalkulačka</b></h2>
-            <label for="vyber" class="col-sm-3 col-form-label">Výběr vzorce</label>
-            <div class="col-sm-9">
-                <select class="form-control" name="vyber" id="vyber">
-                    <option id="povrch">Povrch</option>
-                    <option id="objem">Objem</option>
-                    <option id="telU">Tělesová úhlopříčka</option>
-                    <option id="stenU">Stěnová úhlopříčka</option>
-                </select>
+            <div class="form-group row">
+                <label for="vyber" class="col-sm-3 col-form-label">Výběr vzorce</label>
+                <div class="col-sm-9">
+                    <div class="form-check form-check-inline,">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="vyber" id="povrch" value="povrch" />
+                            Povrch
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline,">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="vyber" id="objem" value="objem" />
+                            Objem
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline,">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="vyber" id="telU" value="telU" />
+                            Tělesová úhlopříčka
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline,">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="vyber" id="stenU" value="stenU" />
+                            Stěnová úhlopříčka
+                        </label>
+                    </div>
+                </div>
             </div>
             <label for="vyber" class="col-sm-3 col-form-label">Zadej stranu a :</label>
             <input class="zadani" type="text" id="c1" name="c1"/>
-            <button type="button" id="vypocet">Vypočítat výsledek</button>
+            <button type="button" id="vypocet2">Vypočítat výsledek</button>
             <div id="vysledek"></div>
         </div>
         <script src="script.js"></script>
