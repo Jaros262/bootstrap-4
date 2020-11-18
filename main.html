@@ -11,67 +11,30 @@
       <header>
           <h1>Kalkulačka vzorců krychle</h1>
       </header>
-    <div class="col-md-6">
-      <div class="vzorce">
-        <h2><b>Vzorce</b></h2>
-        <li>Povrch: S = 6 . a²</li>
-        <li>Objem: V = a³</li>
-        <li>Tělesová úhlopříčka: u = a . √3</li>
-        <li>Stěnová úhlopříčka: us = a . √2</li>
-        <img src="pic.png">
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="kalkulacka">
-        <h2><b>Kalkulačka</b></h2>
-        <label for="vyber" class="col-sm-3 col-form-label">Nejprve zadej délku strany a :</label>
-        <input class="zadani" type="text" id="c1" name="c1"/>
-        <div class="form-group row">
+        <div class="vzorce">
+            <h2><b>Vzorce</b></h2>
+            <li>S = 6 . a²</li>
+            <li> V = a³</li>
+            <li> u = a . √3</li>
+            <li> us = a . √2</li>
+            <img src="pic.png">
+        </div>
+        <div class="kalkulacka">
+            <h2><b>Kalkulačka</b></h2>
             <label for="vyber" class="col-sm-3 col-form-label">Výběr vzorce</label>
             <div class="col-sm-9">
-                <div class="form-check form-check-inline,">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="vyber" id="povrch" value="povrch" />
-                        Povrch
-                    </label>
-                </div>
-                <div class="form-check form-check-inline,">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="vyber" id="objem" value="objem" />
-                        Objem
-                    </label>
-                </div>
-                <div class="form-check form-check-inline,">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="vyber" id="telU" value="telU" />
-                        Tělesová úhlopříčka
-                    </label>
-                </div>
-                <div class="form-check form-check-inline,">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="vyber" id="stenU" value="stenU" />
-                        Stěnová úhlopříčka
-                    </label>
-                </div>
+                <select class="form-control" name="vyber" id="vyber">
+                    <option value="S">Povrch</option>
+                    <option value="V">Objem</option>
+                    <option value="u">Tělesová úhlopříčka</option>
+                    <option value="us">Stěnová úhlopříčka</option>
+                </select>
             </div>
+            <label for="vyber" class="col-sm-3 col-form-label">Zadej stranu a :</label>
+            <input type="text" id="c1" name="c1"/>
+            <button type="button" id="vysledek">Vypočítat výsledek</button>
+            <div class="vysledek" id="vypocet">Výsledek:</div>
         </div>
-        <div>
-            <div> Povrch =
-                <div id="vypocet1"></div>
-            </div>
-            <div> Objem =
-                <div id="vypocet2"></div>
-            </div>
-            <div> Tělesová úhlopříčka =
-                <div id="vypocet3"></div>
-            </div>
-            <div> Stěnová úhlopříčka =
-                <div id="vypocet4"></div>
-            </div>
-        </div>
-    </div>
-</div>    
-        
         <footer class="container-fluid">
             <hr />
             <div>
@@ -84,4 +47,4 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css"/>
   </body>
-</html>
+</html> 
